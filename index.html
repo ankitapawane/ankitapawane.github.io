@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Makergaon Fellowship Portfolio</title>
+  <meta name="description" content="Portfolio for Makergaon Fellowship application — projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7dd3fc;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071027 0%, #071827 60%);color:#e6eef8}
+    .container{max-width:980px;margin:28px auto;padding:28px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:108px;height:108px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:800;color:#04263b;font-size:26px;box-shadow:0 6px 24px rgba(4,6,15,0.7)}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    .card{background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.02));padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+
+    .bio p{margin:0 0 10px 0;color: #cfe7ff}
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{background:var(--accent);color:#012028;padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 8px 0}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    aside .meta{color:var(--muted);font-size:14px}
+    .contact-form{display:flex;flex-direction:column;gap:8px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+
+    footer{color:var(--muted);text-align:center;margin-top:26px;font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.projects{grid-template-columns:1fr}}
+
+    /* small interactions */
+    a:focus,button:focus,input:focus,textarea:focus{outline:2px solid rgba(125,211,252,0.18);outline-offset:2px}
+    .project:hover{transform:translateY(-4px);transition:transform .18s}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">YN</div>
+      <div>
+        <h1>Your Name</h1>
+        <div class="subtitle">Applying for Makergaon Fellowship — maker, community-builder, and tinkerer</div>
+        <div style="margin-top:8px">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid" role="main">
+      <section class="card bio" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>I build physical projects that solve local problems, run workshops that teach hands-on skills, and experiment at the intersection of craft & technology. This portfolio highlights a few maker projects, community activities, and the learning outcomes I bring to the Makergaon Fellowship.</p>
+        <div class="cta">
+          <a class="btn" href="/resume.pdf" download>Download CV</a>
+          <a class="btn secondary" href="#projects">Read projects</a>
+        </div>
+
+        <div style="margin-top:18px">
+          <h3>Skills</h3>
+          <div class="skills" aria-label="skills list">
+            <span class="chip">Electronics</span>
+            <span class="chip">Arduino</span>
+            <span class="chip">Woodworking</span>
+            <span class="chip">Workshop Facilitation</span>
+            <span class="chip">Rapid Prototyping</span>
+            <span class="chip">Community Engagement</span>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h3>Impact highlights</h3>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Led 6 community workshops on hands-on electronics (40+ participants)</li>
+            <li>Built 3 low-cost prototypes for waste-reduction in small shops</li>
+            <li>Mentored 5 student maker teams through competition cycles</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="card" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact & Details</h2>
+        <p class="meta">Location: Your City — willing to relocate / travel for fellowship</p>
+        <p class="meta">Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p class="meta">Phone: +91 98765 43210</p>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:14px 0">
+        <h3>Availability</h3>
+        <p class="meta">Available to start: Month Year</p>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:14px 0">
+        <h3>Quick links</h3>
+        <p><a class="btn secondary" href="#projects">Projects</a></p>
+        <p><a class="btn secondary" href="/maker-portfolio.zip">Download project assets</a></p>
+      </aside>
+    </div>
+
+    <section id="projects" style="margin-top:20px">
+      <h2 style="margin-bottom:10px">Selected projects</h2>
+      <div class="projects">
+        <article class="project" aria-labelledby="p1">
+          <h3 id="p1">Project A — Low-cost air quality monitor</h3>
+          <p>Built with off-the-shelf sensors and a simple data-logging dashboard. Used in a neighbourhood study of indoor air quality.</p>
+          <p style="margin-top:10px"><a class="btn" href="#">Read case study</a></p>
+        </article>
+
+        <article class="project" aria-labelledby="p2">
+          <h3 id="p2">Project B — Community repair fair</h3>
+          <p>Organised hands-on repair workshops that reduced appliance waste and taught basic fixing skills to 60 participants.</p>
+          <p style="margin-top:10px"><a class="btn" href="#">Read case study</a></p>
+        </article>
+
+        <article class="project" aria-labelledby="p3">
+          <h3 id="p3">Project C — Solar cooker prototype</h3>
+          <p>Low-cost parabolic cooker design used for outdoor community cooking events; documentation and build guide included.</p>
+          <p style="margin-top:10px"><a class="btn" href="#">Read case study</a></p>
+        </article>
+
+        <article class="project" aria-labelledby="p4">
+          <h3 id="p4">Project D — Workshop curriculum</h3>
+          <p>Curriculum for 4x2 hour beginner electronics workshops. Emphasises hands-on learning and local material sourcing.</p>
+          <p style="margin-top:10px"><a class="btn" href="#">View curriculum</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:20px">
+      <h2>Contact</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); window.location='mailto:your.email@example.com?subject=Makergaon%20Fellowship%20Enquiry&body='+encodeURIComponent(document.getElementById('msg').value)">
+        <label for="msg" class="sr-only">Message</label>
+        <textarea id="msg" rows="5" placeholder="Write a short message — include which fellowship batch you're applying for" required></textarea>
+        <div style="display:flex;gap:8px">
+          <input type="text" placeholder="Your name" aria-label="Your name" required />
+          <input type="email" placeholder="Your email" aria-label="Your email" required />
+        </div>
+        <div style="display:flex;gap:8px;margin-top:6px">
+          <button class="btn" type="submit">Send email</button>
+          <a class="btn secondary" href="mailto:your.email@example.com">Email directly</a>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>Designed for Makergaon Fellowship application • Built with ❤️ • Replace placeholder text & assets with your own</div>
+    </footer>
+  </div>
+
+  <!-- Minimal JS to enhance UX (replace / extend as needed) -->
+  <script>
+    // Replace avatar initials from your name automatically
+    (function(){
+      const avatar = document.querySelector('.avatar');
+      const name = document.querySelector('h1').textContent.trim();
+      if(name){
+        const initials = name.split(' ').slice(0,2).map(n=>n[0].toUpperCase()).join('');
+        avatar.textContent = initials;
+      }
+    })();
+  </script>
+</body>
+</html>
